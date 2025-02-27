@@ -1,2 +1,475 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+body {
+    margin: auto;
+    font-size: large;
+    font-family: Inter;
+}
+h1, h2 {
+    margin: auto;
+    text-align: center;
+    font-size: xxx-large;
+}
+
+
+/* Styling */
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 4%;
+}
+hr.short-edge {
+    border: 2px solid lightgrey;
+    width: 8vw;
+    border-radius: 4px;
+}
+
+
+/* Header */
+header.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 4%;
+}
+header.nav-header > div.logo {
+    display: flex;
+    align-items: center;
+}
+header.nav-header > div.logo > img.home-icon {
+    width: auto;
+    height: 4vw;
+    margin-right: 1vw;
+}
+header.nav-header > div > span {
+    align-content: center;
+    font-size: xx-large;
+    cursor: default;
+}
+
+/* Header -> Nav */
+header.nav-header > nav {
+    display: flex;
+}
+header.nav-header > nav > a {
+    text-decoration: none;
+    border: 0.8px solid;
+    padding: 8px 16px;
+    color: black ;
+}
+header.nav-header > nav > a:hover {
+    background-color: lightblue;
+}
+
+/* Image Auto Slide */
+
+.mySlides > img {
+    width: 100%;
+    height: 48vw;
+}
+
+/* Main */
+main > section {
+    margin-bottom: 4vw;
+}
+
+/* Main -> Section Home */
+section#home {
+    display: flex;
+    flex-direction: column;
+}
+section#home > h1.title {
+    padding-top: 8vw;
+    font-size: xxx-large;
+    padding-bottom: 2vw;
+}
+section#home > p.description {
+    font-size: medium;
+    text-align: center;
+    margin: 2% 4%;
+}
+section#home > div.container {
+    padding: 4vw 0vw 1vw;
+    height: fit-content;
+    position: relative;
+}
+section#home > div.container > div.banner {
+    width: 100%;
+    margin-right: 4vw;
+}
+section#home > div.container > div.banner > div.banner-image {
+    /* background-image: url(https://picsum.photos/800); */
+    background-position: center;
+    background-size: cover;
+    /* width: 100%;
+    height: 72%; */
+    margin-bottom: 2vw;
+    border-radius: 0.6vw;
+    display: none;
+}
+section#home > div.container > div.banner > div.banner-image > img {
+    width: 100%;
+    height: 72%;
+    overflow: hidden;
+}
+section#home > div.container > div.banner > div.testimoni-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0vw 4vw;
+}
+section#home > div.container > div.banner > div.testimoni-container > div.testimoni-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6vw;
+}
+section#home > div.container > div.banner > div.testimoni-container > div.testimoni-content > p.review {
+    font-size: larger;
+    font-weight: 300;
+    font-style: italic;
+}
+section#home > div.container > div.banner > div.testimoni-container > div.testimoni-content > div.reviewer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1vw;
+}
+section#home > div.container > div.banner > div.testimoni-container > div.testimoni-content > div.reviewer > div.picture {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/048/633/514/large_2x/model-at-desk-with-desktop-setup-background-free-photo.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 4.8vw;
+    width: 4.8vw;
+    border-radius: 50%;
+    margin-right: 2vw;
+}
+section#home > div.container > div.banner > div.testimoni-container > div.testimoni-content > div.reviewer > div.information {
+    display: flex;
+    flex-direction: column;
+}
+section#home > div.container > div.banner > div.testimoni-container > div.testimoni-content > div.reviewer > div.information > span.name {
+    font-size: x-large;
+    font-weight: bolder;
+    margin-bottom: 0.4vw;
+}
+section#home > div.container > div.banner > div.testimoni-container > div.testimoni-content > div.reviewer > div.information > span.job {
+    font-weight: 200;
+    font-style: italic;
+}
+/* Main -> Section Home -> Container -> Aside */
+section#home > div.container > aside {
+    background-color: whitesmoke;
+    padding: 4%;
+    height: auto;
+    border-radius: 0.6vw;
+}
+section#home > div.container > aside > div.container-label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1vw;
+}
+section#home > div.container > aside > div.container-label > h4 {
+    margin: unset;
+    text-align: left;
+    font-size: xx-large;
+}
+section#home > div.container > aside > div.container-label > p {
+    margin-bottom: 4vw;
+}
+
+/* Main -> Section Home -> Container -> Aside -> Form */
+section#home > div.container > aside > form > label {
+    font-weight: bolder;
+    font-size: large;
+}
+section > div.container > aside > form > input {
+    margin: 1vw 0vw;
+    padding: 2vw;
+    width: -webkit-fill-available;
+    font-size: larger;
+}
+section > div.container > aside > form > input[type="submit" i] {
+    border: 0px;
+    background-color: darkslategrey;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+}
+section#home > div.container > aside > form > select {
+    padding: 2vw;
+    margin: 1vw 0vw;
+    width: -webkit-fill-available;
+    cursor: pointer;
+    appearance: none;
+    background-color: white;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/9/9a/Caret_down_font_awesome.svg) 98% /8% no-repeat; 
+}
+section#home > div.container > aside > form > select#interest {
+    background-color: white;
+    font-size: larger;
+    color: grey;
+}
+select#interest::after {
+    color: black;
+}
+
+/* Main -> Section Home -> Article */
+section#home > article {
+    padding: 0vw 4vw;
+    display: flex;
+    width: 52%;
+    flex-direction: column;
+}
+section#home > article > p {
+    font-size: larger;
+    font-weight: normal;
+}
+section#home > article > div.feature-list {
+    display: flex;
+    margin-top: 0.6vw;
+    margin-bottom: 0.6vw;
+}
+section#home > article > div.feature-list > div {
+    display: flex;
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 50%;
+    color: darkslategrey;
+    background-color: whitesmoke;
+    margin-right: 2vw;
+    width: 3vw;
+    height: 3vw;
+    align-items: center;
+    justify-content: center;
+}
+section#home > article > div.feature-list > span {
+    align-items: center;
+    display: flex;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+/* Main -> Section Our Package */
+section#our-package {
+    width: auto;
+}
+
+section#our-package > article > div.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+/* Main -> Section Our Package -> Header */
+section#our-package > header.our-package-header {
+    background-color: whitesmoke;
+    padding: 8vw 0vw;
+}
+
+/* Main -> Section Our Package -> Article */
+section#our-package > article > div.container {
+    padding: 6vw 0vw;
+}
+section#our-package > article > div.container > div.container-item {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+}
+
+/* section#our-package > article > div.container > div.container-item .2 
+    padding: 0vw 4vw;
+} */
+
+section#our-package > article > div.container > div.container-item > div.point-icon {
+    background-color: black;
+    border-radius: 50%;
+    width: 4.8vw;
+    height: 2.8vw;
+    margin-right: 2vw;
+}
+section#our-package > article > div.container > div.container-item > div.point-content {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+section#our-package > article > div.container > div.container-item > div.point-content > h3.content-title {
+    font-size: large;
+    margin: 1vw 0vw;
+}
+
+/* Main -> Section Call Us -> Header */
+section#call-us > header {
+    margin: 8% 0% 4%;
+}
+
+/* Main -> Section Call Us -> Article */
+section#call-us > article {
+    margin: 0% 4%;
+    margin-bottom: 4vw;
+    text-align: center;
+}
+section#call-us > article > p {
+    margin-bottom: 4vw;
+    font-size: medium;
+}
+section#call-us > article > button[type="submit"] {
+    border: 0px;
+    background-color: darkslategrey;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    margin: 1vw 0vw;
+    padding: 1vw;
+}
+
+/* Footer */
+footer {
+    margin: 2% 4%;
+}
+footer > div.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vw 0vw;
+}
+
+footer > div.logo > span {
+    align-content: center;
+    font-size: x-large;
+    cursor: default;
+}
+footer > ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    align-items: center;
+    margin: 0vw;
+    padding: 0vw;
+}
+footer > ul > li {
+    cursor: default;
+    color: gray;
+}
+footer > ul > ul {
+    padding: 0vw 0vw 1vw;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+footer > ul > ul > li {
+    padding: 0vw 0.8vw;
+    cursor: default;
+    color: gray;
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+
+/* Common */
+body {
+    font-size: medium;
+}
+h1, h2 {
+    font-size: xx-large;
+}
+
+p {
+    font-size: large;
+}
+
+/* Header */
+header.nav-header {
+    flex-direction: column;
+    margin: 4%;
+}
+header.nav-header > div.logo {
+    margin-bottom: 4vw;
+}
+header.nav-header > div.logo > img.home-icon {
+    width: 8vw;
+    height: 8vw;
+}
+header.nav-header > div.logo > span {
+    font-size: large;
+}
+
+/* Section Home */
+section#home > h1.title {
+    font-size: xx-large;
+}
+section#home > div.container {
+    flex-direction: column;
+}
+
+section#home > div.container > div.banner {
+    margin: 12vw 0vw;
+}
+section#home > div.container > div.banner > div.testimoni-container > div.testimoni-content > p.review {
+    font-size: medium;
+}
+section#home > div.container > div.banner > div.testimoni-container > div.testimoni-content > div.reviewer > div.picture {
+    height: 12vw;
+    width: 12vw;
+}
+section#home > article {
+    width: -webkit-fill-available;
+}
+section#home > article > p {
+    font-size: medium;
+}
+section#home > article > div.feature-list {
+    margin: 2vw 0vw;
+}
+section#home > article > div.feature-list > div {
+    width: 9vw;
+    height: 7vw;
+}
+section#home > div.container > aside {
+    border-radius: 2vw;
+}
+section#home > div.container > aside > p {
+    margin-bottom: 1vw;
+}
+section#home > div.container > aside > form > input {
+    padding: 2vw;
+    font-size: large;
+}
+section#home > div.container > aside > form > select#interest {
+    padding: 2vw;
+    font-size: large;
+}
+section#home > div.container > aside > form > input[type="submit" i] {
+    padding: 4vw;
+}
+
+/* Section Our Package */
+section#our-package > article > div.container > div.container-item {
+    flex-direction: column;
+    align-items: center;
+}
+section#our-package > article > div.container > div.container-item > div.point-icon {
+    margin: 0vw;
+    width: 16vw;
+    height: 16vw;
+}
+section#our-package > article > div.container > div.container-item > div.point-content {
+    padding-top: 2vw;
+}
+section#our-package > article > div.container > div.container-item > div.point-content > div.content-description {
+    display: none;
+}
+
+/* Section Call Us */
+section#call-us > article > button[type="submit"] {
+    padding: 4vw;
+}
+
+/* Footer */
+footer > div.logo > div.home-icon {
+    width: 8vw;
+    height: 8vw;
+}
+footer > div.logo > span {
+    font-size: large;
+}
+
+}
