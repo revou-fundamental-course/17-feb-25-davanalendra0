@@ -63,9 +63,24 @@ header.nav-header > nav > a:hover {
 
 /* Image Auto Slide */
 
+.banner > .slideshow-container {
+    position: relative;
+    margin: auto;
+}
+.mySlides {
+display: none;
+}
 .mySlides > img {
     width: 100%;
     height: 48vw;
+}
+.fade {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+@keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
 }
 
 /* Main */
