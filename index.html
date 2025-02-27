@@ -3,9 +3,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dava</title>
+    <title>Home</title>
+    <!-- Menghubungkan CSS styles.css dari folder css ke index.html -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Menghubungkan Font Family Inter dari Google Fonts ke index.html -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <!-- Header -->
+    <header class="nav-header">
+        <!-- Logo & Nama Usaha -->
+         <div class="logo">
+            <img src="assets/img/logo.jpg" alt="Travel Logo" class="home-icon">
+             <span>Travel Agent</span>
+         </div>
+        <!-- Link Navigasi -->
+        <nav>
+            <a href="#home">Beranda</a>
+            <a href="#our-package">Paket</a>
+            <a href="#call-us">Hubungi Kami</a>
+        </nav>
+    </header>
+    <hr>
+
+    <!-- Konten -->
+    <main>
+        <!-- Home/Banner Section -->
+         <section id="home">
+             <h1 class="title">Travel Agent's kamu yang Terpercaya!</h1>
+             <p class="description">Petualangan kamu adalah kebahagian kami dalam membantu kamu merasakan pengalaman baru dalam hidup</p>
+             <div class="container">
+                 <div class="banner">
+                     <!-- Auto Slide Image -->
+                     <div class="slideshow-container">
+                        <div class="mySlides fade">
+                          <img src="assets/img/bukit.jpg">
+                        </div>
+                        <div class="mySlides fade">
+                          <img src="assets/img/laut.jpg">
+                        </div>
+                        <div class="mySlides fade">
+                          <img src="assets/img/mountain.jpg">
+                        </div>
+                      </div>
+                     <!--  -->
+                     <div class="testimoni-container">
+                         <div class="testimoni-content">
+                             <p class="review">"Liburan jadi menyenangkan bersama Travel Agent ku"</p>
+                             <div class="reviewer">
+                                 <div class="picture"></div>
+                                 <div class="information">
+                                     <span class="name">Eva</span>
+                                     <span class="job">Ibu Rumah Tangga, 32</span>
+                                 </div>
+                             </div>
+                         </div>
+                         <hr class="short-edge">
+                     </div>
+                 </div>
+
+                 <!-- Formulir Contact Us -->
+                 <aside>
+                    <div class="container-label">
+                        <h4>Hubungi Kami</h4>
+                        <p>Kami akan menghubungi kamu dalam 12 jam setelah menentukan tujuan liburan kamu</p>
+                    </div>
+                    <!-- Ketika tombol submit di klik informasi atau inputan di formulir akan di kirim ke function validateForm() -->
+                     <form name="myForm" onsubmit="return validateForm()" autocomplete="on">
+                         <label for="full-name">Nama:</label><br>
+                         <input type="text" name="full-name" id="full-name" placeholder="Nama Lengkap" autocapitalize="words"><br><br>
+                         <label for="email-address">Alamat email:</label><br>
+                         <input type="email" name="email-address" id="email-address" placeholder="example@email.com" required><br><br>
+                         <label for="interest">Kamu ingin liburan kemana?</label><br>
+                         <select name="interest" id="interest" required>
+                             <option value="default" style="color: grey;">Pilih dulu</option>
+                             <option value="beach">Pantai</option>
+                             <option value="sea">Laut</option>
+                             <option value="mountain">Gunung</option>
+                         </select><br><br>
+                         <input type="submit" value="Ayo berangkat!">
+                     </form>
+                 </aside>
+             </div>
+             <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero error consectetur debitis nisi fugiat animi, illum pariatur perferendis? Expedita, ex!</p>
+
+                <div class="feature-list">
+                    <div>1</div>
+                    <span>Your first feature, written in the form a benefit statement</span>
+                </div>
+                <div class="feature-list">
+                    <div>2</div>
+                    <span>Your second feature, written in the form a benefit statement</span>
+                </div>
+                <div class="feature-list">
+                    <div>3</div>
+                    <span>Your third feature, written in the form a benefit statement</span>
+                </div>
+             </article>
+         </section>
+
+        <!-- Our Package Section -->
+         <section id="our-package">
+            <header class="our-package-header">
+                <h2>Pilih pengalaman baru yang akan kamu rasakan</h2>
+            </header>
+            <article>
+                <div class="container">
+                    <div class="container-item">
+                        <div class="point-icon"></div>
+                        <div class="point-content">
+                            <h3 class="content-title">Bandung</h3>
+                            <div class="content-description">Travel dan wisata di Bandung, nikmati pesona alam yang sejuk dan kuliner yang menarik</div>
+                        </div>
+                    </div>
+                    <div class="container-item 2">
+                        <div class="point-icon"></div>
+                        <div class="point-content">
+                            <h3 class="content-title">Bandung</h3>
+                            <div class="content-description">Travel dan wisata di Bandung, nikmati pesona alam yang sejuk dan kuliner yang menarik</div>
+                        </div>
+                    </div>
+                    <div class="container-item">
+                        <div class="point-icon"></div>
+                        <div class="point-content">
+                            <h3 class="content-title">Bandung</h3>
+                            <div class="content-description">Travel dan wisata di Bandung, nikmati pesona alam yang sejuk dan kuliner yang menarik</div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="short-edge">
+                <div class="container">
+                    <div class="container-item">
+                        <div class="point-icon"></div>
+                        <div class="point-content">
+                            <h3 class="content-title">Bali</h3>
+                            <div class="content-description">Travel dan wisata di Bali, kunjungi cagar budaya dan kuliner yang menarik</div>
+                        </div>
+                    </div>
+                    <div class="container-item 2">
+                        <div class="point-icon"></div>
+                        <div class="point-content">
+                            <h3 class="content-title">Bali</h3>
+                            <div class="content-description">Travel dan wisata di Bali, kunjungi cagar budaya dan kuliner yang menarik</div>
+                        </div>
+                    </div>
+                    <div class="container-item">
+                        <div class="point-icon"></div>
+                        <div class="point-content">
+                            <h3 class="content-title">Bali</h3>
+                            <div class="content-description">Travel dan wisata di Bali, kunjungi cagar budaya dan kuliner yang menarik</div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </article>
+         </section>
+
+        <!-- Call Action Section -->
+         <section id="call-us">
+            <header>
+                <h2>Your Closing Argument Headline</h2>
+            </header>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem debitis placeat laudantium quidem explicabo, doloremque iure nulla aspernatur rerum molestiae.</p>
+                <button type="submit">
+                    CALL TO ACTION
+                </button>
+            </article>
+            <hr>
+         </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="logo">
+            <div class="home-icon"></div>
+            <span>Travel Agent</span>
+        </div>
+        <ul>
+            <ul>
+                <li>Terms of Service</li>
+                <li>Privacy Policy</li>
+            </ul>
+            <li>&copy; 2024 Nalendra</li>
+        </ul>
+    </footer>
+    <!-- Menghubungkan Javascript script.js dari folder js ke index.html -->
+    <script src="js/script.js"></script>
 </body>
 </html>
